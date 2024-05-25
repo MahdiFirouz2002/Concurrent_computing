@@ -12,6 +12,14 @@ Welcome to the Concurrent Computing Repository! This repository is dedicated to 
    - Description: This project simulates the famous cycling event, Tour de France, where multiple cyclists compete in stages. The simulation is designed to run concurrently, with each cyclist being handled by a separate process.
    - Technologies: Python, Multiprocessing
 
+3. **Football Game Simulation**
+   - Description: This project simulates a football game where each player is represented by a separate process. The game starts with a random player possessing the ball, and the ball is passed randomly among players until it reaches the goalkeeper, ending the match.
+   - Technologies: Python, MPI
+
+4. **Exam Time Analysis**
+   - Description: This project simulates an exam scenario where each student receives and returns the exam paper with varying delays. Using multiprocessing, it calculates the total time each student had for answering the exam and computes the average time per student.
+   - Technologies: Python, Multiprocessing
+
 ### Usage
 
 1. **Workers Project**
@@ -20,25 +28,33 @@ Welcome to the Concurrent Computing Repository! This repository is dedicated to 
    - Run `python workers.py` to execute the project.
    - Follow on-screen instructions to observe the workers' behavior during work hours and lunch breaks.
 
-### Project Image
-
-![Project Image](images/workers.png)
-
-
-
-
 2. **Tour de France Simulation**
    - Python 3.x is required for running this project.
    - Navigate to the directory containing `tour.py`.
    - Execute `python tour.py` to start the simulation.
    - View the console output to track the progress of the race and each cyclist's performance.
 
-### Project Image
+3. **Football Game Simulation**
+   - Python 3.x and mpi4py library are required for running this project.
+   - Navigate to the directory containing `football_game.py`.
+   - Run the game using MPI, e.g., `mpiexec -n 11 python football_game.py` for 11 players.
+   - Observe the game progress in the console output.
 
-![Project Image](images/tour.png)
+4. **Exam Time Analysis**
+   - Python 3.x is required for running this project.
+   - Navigate to the directory containing `exam_time_analysis.py`.
+   - Execute `python exam_time_analysis.py` to simulate the exam scenario and analyze the time each student had for answering.
+   - View the console output to see the total time each student had and the average time per student.
 
+### Project Images
 
+1. **Workers Project**
 
+   ![Workers Project Image](images/workers.png)
+
+2. **Tour de France Simulation**
+
+   ![Tour de France Image](images/tour.png)
 
 ### Contribution Guidelines
 
